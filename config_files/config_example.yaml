@@ -1,0 +1,25 @@
+#Change these directories for each sample
+read_1_file: "/home/caleb/scDNA_analysis/Sequencing_data/IFD11_new_code_test/IFD11_S11_L001_R1_001-Copy1.fastq.gz"
+read_2_file: "/home/caleb/scDNA_analysis/Sequencing_data/IFD11_new_code_test/IFD11_S11_L001_R2_001-Copy1.fastq.gz"
+fastq_out_folder: "/home/caleb/scDNA_analysis/Sequencing_data/IFD11_new_code_test/fastq_out/"
+
+#Only change these once you clone the Git on your local computer
+demuxbyname_path: "/home/caleb/scDNA_analysis/bbmap/demuxbyname.sh"
+barcode_whitelist_1: "/home/caleb/scDNA_analysis/IF_Analysis/MB_whitelist/bc1_whitelist_num.json"
+barcode_whitelist_2: "/home/caleb/scDNA_analysis/IF_Analysis/MB_whitelist/bc2_whitelist_num.json"
+primer_csv: "/home/caleb/scDNA_analysis/AML-v2RevA-design-summary.csv"
+bwamem2: "/home/caleb/scDNA_analysis/Reference2/Ref_Genome"
+human_fastq_file: "/home/caleb/scDNA_analysis/genome.fa"
+interval_file: "/home/caleb/scDNA_analysis/FTP_GrCh38_GM1_GM2_variants/FTP_AML-v2RevA-GRCh38_GM1_GM2.bed"
+bwamem2_path: "/home/caleb/scDNA_analysis/bwa-mem2-2.2.1_x64-linux/bwa-mem2"
+samtools_path: "/programs/bin/samtools"
+gatk_path: "/home/caleb/scDNA_analysis/gatk-4.1.3.0/gatk"
+truth_GM1_GM2_variant: "/home/caleb/scDNA_analysis/FTP_GrCh38_GM1_GM2_variants/FTP_GM1_GM2_truth_variants.csv"
+
+#Tunning parameter
+x10_threshold: 0.8
+evenness_threshold: 0.5
+minimum_reads_variant_filter: 10
+umap_n_neighbor: 30
+jaccard_threshold: 0.2
+
